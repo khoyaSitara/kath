@@ -153,8 +153,8 @@ def start(update, context):
         buttons.buildbutton(f"😎 {config_dict['My Channel ❤']}", f"{config_dict['https://t.me/eliteflix_official']}")
         buttons.buildbutton(f"🔥 {config_dict['My Owner 🤍']}", f"{config_dict['https://t.me/ashishsharmalegend']}")
     else:
-        buttons.buildbutton("My Channel ❤", https://t.me/eliteflix_official")
-        buttons.buildbutton("My Owner 🤍", https://t.me/ashishsharmalegend")
+        buttons.buildbutton("My Channel ❤", "https://t.me/eliteflix_official")
+        buttons.buildbutton("My Owner 🤍", "https://t.me/ashishsharmalegend")
     reply_markup = buttons.build_menu(2)
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
         start_string = f'''This bot can mirror all your links to Google Drive!
